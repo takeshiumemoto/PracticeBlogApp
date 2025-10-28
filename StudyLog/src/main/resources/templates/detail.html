@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${post.title}">詳細</title>
+</head>
+<body>
+<h1 th:text="${post.title}"></h1>
+<div th:text="${post.content}"></div>
+<p th:text="${post.createdAt}"></p>
+<a th:href="@{/posts/{id}/edit(id=${post.id})}">編集</a>
+<a th:href="@{/posts}">一覧へ</a>
+</body>
+</html>

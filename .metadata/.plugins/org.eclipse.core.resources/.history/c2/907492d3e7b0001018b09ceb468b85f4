@@ -1,0 +1,3 @@
+spring.application.name=StudyLog
+
+spring.datasource.url=jdbc:h2:mem:studylog;DB_CLOSE_DELAY=-1;MODE=MySQL

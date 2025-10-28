@@ -1,0 +1,7 @@
+package com.example.demo.dao;
+
+@Dao
+@ConfigAutowireable
+public class BlogPostDao {
+
+}

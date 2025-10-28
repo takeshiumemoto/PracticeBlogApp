@@ -1,0 +1,32 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.demo.Entity.StudyLog;
+import com.example.demo.dao.StudyLogDao;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class StudyLogService {
+
+	private final StudyLogDao dao;
+
+    public StudyLogService(StudyLogDao dao) {
+        this.dao = dao;
+    }
+
+	public List<StudyLog> findAll(){
+		return dao.selectAll();
+	}
+
+	@Transactional
+	public void save(StudyLog log) {
+		dao.insert(log);
+	}
+}
+

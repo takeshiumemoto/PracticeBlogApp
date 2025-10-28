@@ -1,0 +1,22 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.demo.service.BlogPostService;
+
+@Controller
+@RequestMapping("/posts")
+public class BlogPostController {
+
+	private final BlogPostService service;
+	
+	public BlogPostController(BlogPostService service) {
+		this.service = service;
+	}
+	
+	@GetMapping
+	public String list(Model model) {
+		
+	}
+}

@@ -1,0 +1,21 @@
+package com.example.demo.dao;
+
+@Dao
+@ConfigAutowireable
+public class BlogPostDao {
+
+	@Select
+	List<BlogPost> findAll();
+	
+	@Select
+	BlogPost selectById(Long id);
+	
+	@Insert
+	int insert(BlogPost post);
+	
+	@Update
+	int update(BlogPost post);
+	
+	@Delete
+	int delete(BlogPost post);
+}

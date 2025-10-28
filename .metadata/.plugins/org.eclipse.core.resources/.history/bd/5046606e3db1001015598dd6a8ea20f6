@@ -1,0 +1,13 @@
+package com.example.demo.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.demo.dao.BlogPostDao;
+
+@Service
+@Transactional
+public class BlogPostService {
+
+	private final BlogPostDao dao = null;
+}
