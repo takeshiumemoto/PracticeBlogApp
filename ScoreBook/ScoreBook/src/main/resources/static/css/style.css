@@ -1,0 +1,13 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+    body { background: linear-gradient(180deg,#071127 0%, #0b1220 100%); color: #eef2ff; height:100vh; display:flex; align-items:center; justify-content:center; font-family: Poppins, Arial;}
+    .login-card { width: 380px; padding:28px; border-radius:12px; background: rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.04); }
+    .form-control { background: rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.04); color:#fff; }
+    .form-control::placeholder { color: rgba(255,255,255,0.6); }
+    .btn-primary { background: linear-gradient(90deg,#7b61ff,#6f42c1); border:none; }
+    a { color:#cfc6ff; }
